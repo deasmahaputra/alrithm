@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class pewangi extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,15 +21,12 @@ class Welcome extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		// $this->load->view('layout/style-login');
+		$this->load->view('layout/styling');
+		$this->load->view('layout/superAdmin/main-navbar');
 	}
 
 	public function index()
-	{
-		$this->load->view('login');
-	}
-
-	public function lupa(){
-		$this->load->view('lupa_password');
+	{		
+		$this->load->view('superAdmin/data_pewangi');
 	}
 }

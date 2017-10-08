@@ -23,17 +23,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<li class="dropdown-header">Inventory Point</li>
 						<li>
-							<a href="starters/layout_boxed.html"><i class="icon-trophy3"></i> Kelola Poin</a>
+							<a href="<?php echo site_url()?>/superAdmin/poin"><i class="icon-trophy3"></i> Kelola Poin</a>
 						</li>
 					</ul>
 				</li>
 
-				<li class="dropdown mega-menu mega-menu-wide">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-color-sampler position-left"></i> Inventory Pewangi </a>
+				<li>
+					<a href="<?php echo site_url()?>/superAdmin/pewangi"><i class="icon-color-sampler position-left"></i> Inventory Pewangi </a>
 				</li>
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<li>
+					<a href="<?php echo site_url()?>/superAdmin/detergen">
 						<i class="icon-make-group position-left"></i> Inventory Detergen
 					</a>
 				</li>
@@ -56,12 +56,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h6 class="panel-title">Traffick Poin per Laundry</h6>
-								<div class="heading-elements">
+								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
 				                		<li><a data-action="reload"></a></li>
 				                	</ul>
-			                	</div>
+			                	</div> -->
 		                	</div>
 
 							<div class="panel-body">
@@ -78,12 +78,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h6 class="panel-title">Ketersediaan Pewangi & Detergen</h6>
-								<div class="heading-elements">
+								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
 				                		<li><a data-action="reload"></a></li>
 				                	</ul>
-			                	</div>
+			                	</div> -->
 							</div>
 
 							<div class="panel-body">
@@ -98,12 +98,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h6 class="panel-title">Total Pelanggan</h6>
-								<div class="heading-elements">
+								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
 				                		<li><a data-action="reload"></a></li>
 				                	</ul>
-			                	</div>
+			                	</div> -->
 							</div>
 
 							<div class="panel-body">

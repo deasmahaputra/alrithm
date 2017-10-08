@@ -13,11 +13,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<ul class="nav navbar-nav">
 				<li class=""><a href="<?php echo site_url()?>/superAdmin/beranda"><i class="icon-home2 position-left"></i> Beranda</a></li>
 
-				<li class="dropdown mega-menu mega-menu-wide active hidup">
+				<li class="dropdown mega-menu mega-menu-wide">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-puzzle4 position-left"></i> Laundry <span class="caret"></span> </a>
 					<ul class="dropdown-menu width-200">
 						<li class="dropdown-header">Inventory Laundry</li>
-						<li class="active">
+						<li>
 							<a href="<?php echo site_url()?>/superAdmin/laundry"><i class="icon-align-center-horizontal"></i> Kelola Data Laundry</a>
 						</li>
 
@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<a href="<?php echo site_url()?>/superAdmin/pewangi"><i class="icon-color-sampler position-left"></i> Inventory Pewangi </a>
 				</li>
 
-				<li>
+				<li class="active hidup">
 					<a href="<?php echo site_url()?>/superAdmin/detergen">
 						<i class="icon-make-group position-left"></i> Inventory Detergen
 					</a>
@@ -51,11 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="content-wrapper">
 				<!-- Dashboard content -->
 				<div class="row">
-					<div class="col-lg-9 col-md-9 col-sm-9 animated bounceInLeft" >
+					<div class="col-lg-12 col-md-12 col-sm-12 animated zoomInLeft" >
 						<!-- Latest posts -->
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h6 class="panel-title">Kelola Data Laundry</h6>
+								<h6 class="panel-title">Inventory Detergen</h6>
 								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -105,55 +105,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<!-- /latest posts -->
-					</div>
-
-					<div class="col-lg-3 col-sm-3 col-md-3 animated bounceInRight">
-						<!-- Inventory barang -->
-						<div class="panel panel-flat">
-							<div class="panel-heading">
-								<h6 class="panel-title">Best Three Laundry</h6>
-								<div class="heading-elements">
-									<ul class="icons-list">
-				                		<li><a data-action="collapse"></a></li>
-				                		<li><a data-action="reload"></a></li>
-				                	</ul>
-			                	</div>
-							</div>
-
-							<div class="panel-body">
-								<div class="table-responsive">
-									<table class="table text-nowrap huruf-table">
-										<thead>
-											<tr>
-												<th>No</th>
-												<th>Laundry</th>
-												<th>Points</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Oke Laundry</td>
-												<td>80&nbsp;&nbsp;<span class="icon-trophy3" style="color: #FFD700"></span></td>
-											</tr>
-
-											<tr>
-												<td>2</td>
-												<td>Piss Laundry</td>
-												<td>60&nbsp;&nbsp;<span class="icon-trophy3" style="color: #c0c0c0"></span></td>
-											</tr>
-
-											<tr>
-												<td>3</td>
-												<td>Cihuy Laundry</td>
-												<td>50&nbsp;&nbsp;<span class="icon-trophy3" style="color: #CD7F32"></span></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<!-- /Inventory barang -->
 					</div>
 
 					<a href="#" class="float" id="menu-share" data-popup="tooltip" title="Tambah Data Laundry" data-placement="top" style="margin-right: 2%;"data-toggle="modal" data-target="#modal_animation">

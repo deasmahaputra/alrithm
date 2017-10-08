@@ -22,21 +22,30 @@
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/loaders/blockui.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/ui/nicescroll.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/ui/drilldown.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/pages/components_modals.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/notifications/sweet_alert.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/validation/validate.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/styling/uniform.min.js"></script>
-
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/core/app.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/pages/login_validation.js"></script>
-
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/ui/ripple.min.js"></script>
 	<!-- /theme JS files -->
-
+	<style type="text/css">
+		.navbar-inverse{
+			background-color: #3498DB !important;
+		}
+	</style>
 </head>
 
-<body class="login-container login-cover">
+<body class="login-container">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">KUY LAUNDRY - SUPER ADMIN</a>
+		</div>
+	</div>
+	<!-- /main navbar -->
 
 	<!-- Page container -->
 	<div class="page-container">
@@ -47,53 +56,25 @@
 			<!-- Main content -->
 			<div class="content-wrapper">
 
-				<!-- Form with validation -->
-				<form action="<?php echo site_url()?>/superAdmin/beranda" class="form-validate" method = "post">
+				<!-- Password recovery -->
+				<form action="<?php echo site_url()?>/welcome" method="get">
 					<div class="panel panel-body login-form">
 						<div class="text-center">
-							<div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
-							<h5 class="content-group">Login to your account</h5>
+							<div class="icon-object border-warning text-warning"><i class="icon-spinner11"></i></div>
+							<h5 class="content-group">Password recovery <small class="display-block">We'll send you instructions in email</small></h5>
 						</div>
 
-						<div class="form-group has-feedback has-feedback-left">
-							<input type="text" class="form-control" placeholder="Username" name="username" required="required">
+						<div class="form-group has-feedback">
+							<input type="email" class="form-control" placeholder="Your email">
 							<div class="form-control-feedback">
-								<i class="icon-user text-muted"></i>
+								<i class="icon-mail5 text-muted"></i>
 							</div>
 						</div>
 
-						<div class="form-group has-feedback has-feedback-left">
-							<input type="password" class="form-control" placeholder="Password" name="password" required="required">
-							<div class="form-control-feedback">
-								<i class="icon-lock2 text-muted"></i>
-							</div>
-						</div>
-
-						<div class="form-group login-options">
-							<div class="row">
-								<div class="col-sm-6">
-									<label class="checkbox-inline">
-										<input type="checkbox" class="styled" checked="checked">
-										Remember
-									</label>
-								</div>
-
-								<div class="col-sm-6 text-right">
-									<a href="<?php echo site_url()?>/welcome/lupa">Forgot password?</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<button type="submit" class="btn bg-primary-600 btn-block">Login <i class="icon-arrow-right14 position-right"></i></button>
-						</div>
-
-						<div class="content-divider text-muted form-group"><span>Don't have an account?</span></div>
-						<a href="login_registration.html" class="btn btn-default btn-block content-group">Sign up</a>
-						<span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>
+						<button type="submit" class="btn bg-blue btn-block" id="sweet_info">Reset password <i class="icon-arrow-right14 position-right"></i></button>
 					</div>
 				</form>
-				<!-- /form with validation -->
+				<!-- /password recovery -->
 
 			</div>
 			<!-- /main content -->
@@ -103,6 +84,8 @@
 
 	</div>
 	<!-- /page container -->
+
+
 	<!-- Footer -->
 	<div class="footer text-white text-center" style="margin-bottom: 2%;">
 		&copy; 2017. <a href="#" class="text-white">Kuy Laundry</a> by <a href="http://themeforest.net/user/Kopyov" class="text-white" target="_blank">RD</a>
