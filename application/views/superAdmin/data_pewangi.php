@@ -302,7 +302,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- Footer -->
 	<div class="footer text-muted">
-		&copy; 2017. <a href="#">Kuy Laundry</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">RD</a>
+		&copy; 2017. <a href="<?php echo site_url();?>">Kuy Laundry</a>
 	</div>
 	<!-- /footer -->
 	</body>

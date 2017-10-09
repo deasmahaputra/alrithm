@@ -105,7 +105,7 @@
 	<!-- /page container -->
 	<!-- Footer -->
 	<div class="footer text-white text-center" style="margin-bottom: 2%;">
-		&copy; 2017. <a href="#" class="text-white">Kuy Laundry</a> by <a href="http://themeforest.net/user/Kopyov" class="text-white" target="_blank">RD</a>
+		&copy; 2017. <a href="<?php echo site_url();?>" class="text-white">Kuy Laundry</a>
 	</div>
 	<!-- /footer -->
 
