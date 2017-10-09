@@ -119,7 +119,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                	</ul>
 			                	</div>
 							</div>
+							<div class="panel-heading">
 
+							  <div class="dropdown">
+							  	<span>Filter Lokasi :</span>
+							    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Pilih Kota
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Barat</a></li>
+							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Pusat</a></li>
+							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Timur</a></li>
+							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Selatan</a></li>
+							    </ul>
+							  </div>
+							</div>
 							<div class="panel-body">
 								<div class="table-responsive">
 									<table class="table text-nowrap huruf-table">
@@ -351,7 +364,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- Footer -->
 	<div class="footer text-muted">
-		&copy; 2017. <a href="#">Kuy Laundry</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">RD</a>
+		&copy; 2017. <a href="<?php echo site_url();?>">Kuy Laundry</a>
 	</div>
 	<!-- /footer -->
 	</body>
