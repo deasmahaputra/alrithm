@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- Latest posts -->
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h6 class="panel-title">Poin Laundry, Bulan:  <?php echo date("d F Y");?></h6>
+								<h6 class="panel-title">Bonus Bulanan Kuy Laundry</h6>
 								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -35,20 +35,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<thead>
 										<tr>
 											<th>No</th>
-											<th>Laundry</th>
-											<th>Pemilik</th>
-											<th>Total Pelanggan</th>
-											<th>Deksripsi</th>
-											<th class="text-center">Actions</th>
+											<th>Bulan</th>
+											<th>Jenis Bonus</th>
+											<th>Jumlah Bonus</th>
+											<th>Status</th>
+											<th>Action</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td><a href="#">Kuy Laundry</a></td>
-											<td>Enright</td>
-											<td>50 orang</td>
-											<td><span class="label label-success">Kandidat Pemenang Poin</span></td>
+											<td>Januari</td>
+											<td>100 Pelanggan</td>
+											<td>Rp.1.000.000</td>
+											<td><span class="label label-success">Belum di ambil</span></td>
 											<td class="text-center">
 												<ul class="icons-list">
 													<li class="dropdown">

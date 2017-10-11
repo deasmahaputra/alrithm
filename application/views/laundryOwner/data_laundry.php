@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- Latest posts -->
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h6 class="panel-title">Kelola Data Laundry</h6>
+								<h6 class="panel-title">Data Pendapatan</h6>
 								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -35,34 +35,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<thead>
 										<tr>
 											<th>No</th>
-											<th>Laundry</th>
+											<th>Kode</th>
 											<th>Pemilik</th>
 											<th>Alamat</th>
-											<th>No. Hp</th>
-											<th class="text-center">Actions</th>
+											<th>Total Pembayaran</th>
+											
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td><a href="#">Enright</a></td>
-											<td>Traffic Court Referee</td>
-											<td>22 Jun 1972</td>
-											<td>098 765 432 123</td>
-											<td class="text-center">
-												<ul class="icons-list">
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-															<i class="icon-menu9"></i>
-														</a>
-
-														<ul class="dropdown-menu dropdown-menu-right">
-															<li><a href="#" data-toggle="modal" data-target="#ubah"><i class="icon-pencil7"></i> Ubah Data Laundry</a></li>
-															<li><a href="#"><i class="icon-eraser2"></i> <span id="sweet_warning">Hapus Laundry</span></a></li>
-														</ul>
-													</li>
-												</ul>
-											</td>
+											<td>QR245</td>
+											<td>Deas Maha Putra</td>
+											<td>Jln Pualu Buru III No. 16</td>
+											<td>Rp. 25.000.000</td>
+											
 										</tr>
 									</tbody>
 								</table>
@@ -76,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- Inventory barang -->
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h6 class="panel-title">Best Three Laundry</h6>
+								<h6 class="panel-title">Total Pendapatan Perbulan</h6>
 								<div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -84,47 +71,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                	</ul>
 			                	</div>
 							</div>
-							<div class="panel-heading">
-
-							  <div class="dropdown">
-							  	<span>Filter Lokasi :</span>
-							    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Pilih Kota
-							    <span class="caret"></span></button>
-							    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Barat</a></li>
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Pusat</a></li>
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Timur</a></li>
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Selatan</a></li>
-							    </ul>
-							  </div>
-							</div>
 							<div class="panel-body">
 								<div class="table-responsive">
 									<table class="table text-nowrap huruf-table">
 										<thead>
 											<tr>
 												<th>No</th>
-												<th>Laundry</th>
-												<th>Points</th>
+												<th>Bulan</th>
+												<th>Pendapatan</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>1</td>
-												<td>Oke Laundry</td>
-												<td>80&nbsp;&nbsp;<span class="icon-trophy3" style="color: #FFD700"></span></td>
+												<td>Januari</td>
+												<td>Rp.80.000.000</td>
 											</tr>
 
 											<tr>
 												<td>2</td>
-												<td>Piss Laundry</td>
-												<td>60&nbsp;&nbsp;<span class="icon-trophy3" style="color: #c0c0c0"></span></td>
+												<td>Februari</td>
+												<td>Rp.60.000.000</td>
 											</tr>
 
 											<tr>
 												<td>3</td>
-												<td>Cihuy Laundry</td>
-												<td>50&nbsp;&nbsp;<span class="icon-trophy3" style="color: #CD7F32"></span></td>
+												<td>Maret</td>
+												<td>Rp.50.000.000</td>
 											</tr>
 										</tbody>
 									</table>

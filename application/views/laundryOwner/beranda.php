@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- Latest posts -->
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h6 class="panel-title">Inventory Pewangi</h6>
+								<h6 class="panel-title">Inventory Pelanggan</h6>
 								<!-- <div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -35,20 +35,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<thead>
 										<tr>
 											<th>No</th>
-											<th>Laundry</th>
+											<th>Kode</th>
 											<th>Pemilik</th>
+											<th>Berat</th>
+											<th>Service</th>
 											<th>Alamat</th>
 											<th>No. Hp</th>
+											<th>Total</th>
+											<th>Status</th>
 											<th class="text-center">Actions</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td><a href="#">Enright</a></td>
-											<td>Traffic Court Referee</td>
-											<td>22 Jun 1972</td>
+											<td>QLBA2</td>
+											<td>Riza Wahyu</td>
+											<td>5 KG</td>
+											<td>Gold</td>
+											<td>Jln Adhyaksa 6, No 9A, Sukapura</td>
 											<td>098 765 432 123</td>
+											<td>Rp. 30.000</td>
+											<td>Proses</td>
 											<td class="text-center">
 												<ul class="icons-list">
 													<li class="dropdown">

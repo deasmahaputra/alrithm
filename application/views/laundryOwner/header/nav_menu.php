@@ -8,16 +8,16 @@
 				<li class="active"><a href="<?php echo site_url()?>/laundryOwner/beranda" class="hidup"><i class="icon-home2 position-left"></i> Beranda</a></li>
 				
 				<li class="dropdown mega-menu mega-menu-wide">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-puzzle4 position-left"></i> Laundry <span class="caret"></span> </a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-puzzle4 position-left"></i> Pendapatan <span class="caret"></span> </a>
 					<ul class="dropdown-menu width-200">
 						<li class="dropdown-header">Inventory Laundry</li>
 						<li>
-							<a href="<?php echo site_url()?>/laundryOwner/laundry"><i class="icon-align-center-horizontal"></i> Kelola Data Laundry</a>
+							<a href="<?php echo site_url()?>/laundryOwner/laundry"><i class="icon-align-center-horizontal"></i>Pendapatan Harian & Bulanan</a>
 						</li>
 
 						<li class="dropdown-header">Inventory Point</li>
 						<li>
-							<a href="<?php echo site_url()?>/laundryOwner/poin"><i class="icon-trophy3"></i> Kelola Poin</a>
+							<a href="<?php echo site_url()?>/laundryOwner/poin"><i class="icon-trophy3"></i>Pendapatan Bonus Kuy Laundry</a>
 						</li>
 					</ul>
 				</li>
