@@ -1,0 +1,80 @@
+<!-- Main navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">KUY LAUNDRY - LAUNDRY OWNER</a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-bubbles4"></i>
+						<span class="badge bg-warning-400">2</span>
+						<span class="caret"></span>
+					</a>
+					<div class="dropdown-menu dropdown-content width-350">
+						<div class="dropdown-content-heading">
+							Pesan Baru
+							<ul class="icons-list">
+								<li><a href="#"><i class="icon-compose"></i></a></li>
+							</ul>
+						</div>
+
+						<ul class="media-list dropdown-content-body">
+							<li class="media">
+								<div class="media-left">
+									<img src="<?php echo base_url()?>assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<span class="badge bg-danger-400 media-badge">5</span>
+								</div>
+
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">James Alexander</span>
+										<span class="media-annotation pull-right">04:58</span>
+									</a>
+
+									<span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<img src="<?php echo base_url()?>assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<span class="badge bg-danger-400 media-badge">4</span>
+								</div>
+
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Margo Baker</span>
+										<span class="media-annotation pull-right">12:16</span>
+									</a>
+
+									<span class="text-muted">That was something he was unable to do because...</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/placeholder.jpg" alt="">
+						<span>Susilo BY</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+						<li><a href="<?php echo base_url()?>"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
