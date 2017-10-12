@@ -108,30 +108,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 
 					<div class="col-lg-3 col-sm-3 col-md-3 animated bounceInRight">
-						<!-- Inventory barang -->
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h6 class="panel-title">Best Three Laundry</h6>
-								<div class="heading-elements">
-									<ul class="icons-list">
-				                		<li><a data-action="collapse"></a></li>
-				                		<li><a data-action="reload"></a></li>
-				                	</ul>
-			                	</div>
-							</div>
-							<div class="panel-heading">
-
-							  <div class="dropdown">
-							  	<span>Filter Lokasi :</span>
-							    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Pilih Kota
-							    <span class="caret"></span></button>
-							    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Barat</a></li>
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Pusat</a></li>
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Timur</a></li>
-							      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jakarta Selatan</a></li>
-							    </ul>
-							  </div>
+								<br>
+								<div class="form-group">
+									<label>Filter Lokasi :</label>
+									<select class="bootstrap-select show-tick" data-live-search="true" data-width="100%">
+										<optgroup label="Jakarta Barat">
+											<option value = "">-- Pilih Lokasi Laundry --</option>
+											<option value="Kebon Jeruk">Kebon Jeruk</option>
+											<option value="Kembangan">Kembangan</option>
+											<option value="Palmerah">Palmerah</option>
+										</optgroup>
+										<optgroup label="Jakarta Pusat">
+											<option value="Tanah Abang">Tanah Abang</option>
+											<option value="Gambir">Gambir</option>
+											<option value="Menteng">Menteng</option>
+										</optgroup>
+										<optgroup label="Jakarta Timur">
+											<option value="Pulo Gadung">Pulo Gadung</option>
+											<option value="Jatinegara">Jatinegara</option>
+											<option value="Kramat Jati">Kramat Jati</option>
+										</optgroup>
+										<optgroup label="Jakarta Selatan">
+											<option value="Kebayoran Baru">Kebayoran Baru</option>
+											<option value="Kebayoran Lama">Kebayoran Lama</option>
+											<option value="Pasanggrahan">Pasanggrahan</option>
+										</optgroup>
+									</select>
+								</div>
 							</div>
 							<div class="panel-body">
 								<div class="table-responsive">
@@ -208,7 +214,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>No. HP: <span class="text-danger">*</span></label>
-										<input type="number" name="no_hp" class="form-control required" placeholder="Nomor HP Anda">
+										<input type="number" name="no_hp_lndr" class="form-control required" placeholder="Nomor HP Anda">
 									</div>
 								</div>
 							</div>
@@ -217,30 +223,104 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="col-md-12">
 									<div class="form-group">
 										<label>Alamat: <span class="text-danger">*</span></label>
-										<textarea name="experience-description" rows="4" cols="4" placeholder="Alamat Lengkap Laundry Anda" class="form-control required"></textarea>
+										<textarea name="experience-description" rows="4" cols="4" name = "alamat_lndr" placeholder="Alamat Lengkap Laundry Anda" class="form-control required"></textarea>
 									</div>
 								</div>
 							</div>
 						</fieldset>
 
-						<h6>Informasi Petugas</h6>
+						<h6>Informasi Petugas (Data Kelahiran)</h6>
 						<fieldset>
 							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>NIK: <span class="text-danger">*</span></label>
+		                                <input type="number" name="nik" placeholder="No. NIK Anda" class="form-control required">
+	                                </div>
+								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Nama Lengkap: <span class="text-danger">*</span></label>
 		                                <input type="text" name="nama_lengkap" placeholder="Nama Lengkap Anda" class="form-control required">
 	                                </div>
 								</div>
+							</div>
 
+							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>No. HP: <span class="text-danger">*</span></label>
-		                                <input type="number" name="no_hp" placeholder="No. HP Anda" class="form-control required">
+										<label>Tempat Lahir: <span class="text-danger">*</span></label>
+	                                    <input type="text" name="tmpt_lhr" placeholder="Tempat Lahir Anda" class="form-control required">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Tanggal Lahir: <span class="text-danger">*</span></label>
+		                                <input type="date" name="tgl_lhr" placeholder="Tanggal Lahir Anda" class="form-control required">
 	                                </div>
 								</div>
 							</div>
 
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="display-block">Jenis Kelamin:</label>
+										<label class="radio-inline">
+											<input type="radio" class="styled required" name="jk">
+											Male
+										</label>
+
+										<label class="radio-inline">
+											<input type="radio" class="styled" name="jk">
+											Female
+										</label>
+									</div>
+                                </div>
+
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Agama: <span class="text-danger">*</span></label>
+		                                <select class="bootstrap-select show-tick required="" " data-width="100%">
+											<option value="">--- Pilih Agama ---</option>
+											<option value="Islam">Islam</option>
+											<option value="Budha">Budha</option>
+											<option value="Hindu">Hindu</option>
+											<option value="Kristen">Kristen</option>
+											<option value="Katolik">Katolik</option>	
+										</select>
+	                                </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Pekerjaan: <span class="text-danger">*</span></label>
+	                                    <input type="text" name="pekerjaan" placeholder="Pekerjaan Anda" class="form-control required">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Kewarganegaraan: <span class="text-danger">*</span></label>
+		                                <input type="text" name="kwn" placeholder="Kewarganegaraan Anda" class="form-control required">
+	                                </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>Alamat: <span class="text-danger">*</span></label>
+										<textarea name="experience-description" rows="4" cols="4" name = "alamat_org" placeholder="Alamat Lengkap Anda" class="form-control required"></textarea>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+
+						<h6>Informasi Petugas (Akun Credentials)</h6>
+						<fieldset>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
@@ -258,11 +338,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 
 							<div class="row">
-								<div class="col-md-12">
+								<div class="col-md-6">
 									<div class="form-group">
-										<label>Alamat: <span class="text-danger">*</span></label>
-										<textarea name="experience-description" rows="4" cols="4" placeholder="Alamat Lengkap Laundry Anda" class="form-control required"></textarea>
-									</div>
+										<label>Email: <span class="text-danger">*</span></label>
+		                                <input type="email" name="email" placeholder="Email Anda" class="form-control required">
+	                                </div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>No. HP: <span class="text-danger">*</span></label>
+		                                <input type="number" name="no_hp_org" placeholder="No. HP Anda" class="form-control required">
+	                                </div>
 								</div>
 							</div>
 						</fieldset>
@@ -297,7 +384,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>No. HP: <span class="text-danger">*</span></label>
-										<input type="number" name="no_hp" class="form-control required" placeholder="Nomor HP Anda">
+										<input type="number" name="no_hp_lndr" class="form-control required" placeholder="Nomor HP Anda">
 									</div>
 								</div>
 							</div>
@@ -306,30 +393,104 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="col-md-12">
 									<div class="form-group">
 										<label>Alamat: <span class="text-danger">*</span></label>
-										<textarea name="experience-description" rows="4" cols="4" placeholder="Alamat Lengkap Laundry Anda" class="form-control required"></textarea>
+										<textarea name="experience-description" rows="4" cols="4" name = "alamat_lndr" placeholder="Alamat Lengkap Laundry Anda" class="form-control required"></textarea>
 									</div>
 								</div>
 							</div>
 						</fieldset>
 
-						<h6>Informasi Petugas</h6>
+						<h6>Informasi Petugas (Data Kelahiran)</h6>
 						<fieldset>
 							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>NIK: <span class="text-danger">*</span></label>
+		                                <input type="number" name="nik" placeholder="No. NIK Anda" class="form-control required">
+	                                </div>
+								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Nama Lengkap: <span class="text-danger">*</span></label>
 		                                <input type="text" name="nama_lengkap" placeholder="Nama Lengkap Anda" class="form-control required">
 	                                </div>
 								</div>
+							</div>
 
+							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>No. HP: <span class="text-danger">*</span></label>
-		                                <input type="number" name="no_hp" placeholder="No. HP Anda" class="form-control required">
+										<label>Tempat Lahir: <span class="text-danger">*</span></label>
+	                                    <input type="text" name="tmpt_lhr" placeholder="Tempat Lahir Anda" class="form-control required">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Tanggal Lahir: <span class="text-danger">*</span></label>
+		                                <input type="date" name="tgl_lhr" placeholder="Tanggal Lahir Anda" class="form-control required">
 	                                </div>
 								</div>
 							</div>
 
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="display-block">Jenis Kelamin:</label>
+										<label class="radio-inline">
+											<input type="radio" class="styled required" name="jk">
+											Male
+										</label>
+
+										<label class="radio-inline">
+											<input type="radio" class="styled" name="jk">
+											Female
+										</label>
+									</div>
+                                </div>
+
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Agama: <span class="text-danger">*</span></label>
+		                                <select class="bootstrap-select show-tick required="" " data-width="100%">
+											<option value="">--- Pilih Agama ---</option>
+											<option value="Islam">Islam</option>
+											<option value="Budha">Budha</option>
+											<option value="Hindu">Hindu</option>
+											<option value="Kristen">Kristen</option>
+											<option value="Katolik">Katolik</option>	
+										</select>
+	                                </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Pekerjaan: <span class="text-danger">*</span></label>
+	                                    <input type="text" name="pekerjaan" placeholder="Pekerjaan Anda" class="form-control required">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Kewarganegaraan: <span class="text-danger">*</span></label>
+		                                <input type="text" name="kwn" placeholder="Kewarganegaraan Anda" class="form-control required">
+	                                </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>Alamat: <span class="text-danger">*</span></label>
+										<textarea name="experience-description" rows="4" cols="4" name = "alamat_org" placeholder="Alamat Lengkap Anda" class="form-control required"></textarea>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+
+						<h6>Informasi Petugas (Akun Credentials)</h6>
+						<fieldset>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
@@ -347,11 +508,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 
 							<div class="row">
-								<div class="col-md-12">
+								<div class="col-md-6">
 									<div class="form-group">
-										<label>Alamat: <span class="text-danger">*</span></label>
-										<textarea name="experience-description" rows="4" cols="4" placeholder="Alamat Lengkap Laundry Anda" class="form-control required"></textarea>
-									</div>
+										<label>Email: <span class="text-danger">*</span></label>
+		                                <input type="email" name="email" placeholder="Email Anda" class="form-control required">
+	                                </div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>No. HP: <span class="text-danger">*</span></label>
+		                                <input type="number" name="no_hp_org" placeholder="No. HP Anda" class="form-control required">
+	                                </div>
 								</div>
 							</div>
 						</fieldset>

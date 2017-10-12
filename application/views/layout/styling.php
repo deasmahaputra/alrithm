@@ -27,10 +27,12 @@
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/wizards/steps.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/selects/select2.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/core/libraries/jasny_bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/forms/validation/validate.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/extensions/cookie.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/pages/wizard_steps.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/pages/form_bootstrap_select.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/ui/ripple.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/pages/datatables_advanced.js"></script>
