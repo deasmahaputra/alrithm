@@ -48,7 +48,14 @@
 			<div class="content-wrapper">
 
 				<!-- Form with validation -->
-				<form action="<?php echo site_url()?>/superAdmin/beranda" class="form-validate" method = "post">
+				<?php if(isset($_SESSION['success'])){;?>
+                                            <div class="alert alert-success"> 
+                                                <?php echo $_SESSION['success'];?>
+                                            </div>
+
+                                        <?php } ?>
+                                        <?php echo validation_errors('<div class="alert alert-danger">','</div>');?>
+				<form action="" class="form-validate" method = "POST">
 					<div class="panel panel-body login-form">
 						<div class="text-center">
 							<div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
@@ -89,7 +96,7 @@
 						</div>
 
 						<div class="content-divider text-muted form-group"><span>Don't have an account?</span></div>
-						<a href="login_registration.html" class="btn btn-default btn-block content-group">Sign up</a>
+						<a href="<?php echo site_url();?>/user/register" class="btn btn-default btn-block content-group">Sign up</a>
 						<span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>
 					</div>
 				</form>
