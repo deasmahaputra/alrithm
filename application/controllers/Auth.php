@@ -41,7 +41,13 @@ class Auth extends CI_Controller
 				$_SESSION['user_logged'] = TRUE;
 				$_SESSION['username'] = $user->username;
 
-				redirect("laundryOwner/beranda/index", "refresh");
+				if($user->role == 0){
+					redirect("laundryOwner/beranda/index", "refresh");
+				}elseif($user->role == 1){
+					redirect("superAdmin/beranda/index", "refresh");
+				}
+
+				
 			}else{
 				$this->session->set_flashdata("error", "No such account exists in database");
 				redirect("auth/login", "refresh");
@@ -60,8 +66,9 @@ class Auth extends CI_Controller
 			$this->form_validation->set_rules('password2', 'Confirm Password','required|min_length[8]|matches[password]');
 			$this->form_validation->set_rules('gender', 'Gender','required');
 			$this->form_validation->set_rules('phone', 'Phone','required');
+			$this->form_validation->set_rules('role', 'Role','required');
 			
-
+			$role = 0;
 			if($this->form_validation->run() == TRUE){
 				//echo "form validated";
 
@@ -71,7 +78,8 @@ class Auth extends CI_Controller
 					'password' => md5($this->input->post('password')),
 					'gender' => $_POST['gender'],
 					'created_date' => date('Y-m-d H:i:s',strtotime($this->input->post('created_date'))),
-					'phone' => $_POST['phone']
+					'phone' => $_POST['phone'],
+					'role' => $_POST['role']
 				);
 				
 

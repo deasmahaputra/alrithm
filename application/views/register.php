@@ -79,6 +79,7 @@
                                                 <span>Phone Number</span>
                                                 <div class="form-group has-feedback">
                                                     <input type="number" class="form-control" placeholder="Your Phone Number" name="phone">
+                                                    <input type="hidden" class="form-control" name="role" value="0">
                                                     
                                                 </div>
                                             </div>
@@ -90,6 +91,7 @@
                                                 <label>
                                                     <input type="checkbox" class="styled">
                                                     Accept <a href="#">terms of service</a>
+
                                                 </label>
                                             </div>
                                         </div>
