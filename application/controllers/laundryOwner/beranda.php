@@ -22,12 +22,16 @@ class beranda extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->view('layout/styling');
-		$this->load->view('layout/laundryOwner/main-navbar');
+		if(!isset($_SESSION['user_logged'])){
+			$this->session->set_flashdata("error","Please Loggin first to view this page");
+			redirect('auth/login');
+		}
 	}
 
 	public function index()
 	{	
 		$this->load->view('laundryOwner/header/nav_menu');
+		$this->load->view('layout/laundryOwner/main-navbar');
 		$this->load->view('laundryOwner/beranda');
 	}
 }

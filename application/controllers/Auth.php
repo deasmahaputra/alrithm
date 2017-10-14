@@ -8,10 +8,13 @@ class Auth extends CI_Controller
 		parent::__construct();
 		$this->load->view('layout/styling');
 		$this->load->view('layout/laundryOwner/main-navbar');
+		$this->load->model('auth_model');
 	}
 	public function logout()
 	{
-		unset($_SESSION);
+		//unset($_SESSION);
+		$this->session->unset_userdata('username');
+		$this->session->sess_destroy();
 		redirect("auth/login","refresh");
 	}
 
@@ -28,13 +31,14 @@ class Auth extends CI_Controller
 			$this->db->select('*');
 			$this->db->from('users');
 			$this->db->where(array('username' => $username, 'password' => $password));
+			
 			$query = $this->db->get();
-
+			//$query = $this->auth_model->regist($data);
 			$user = $query->row();
 
 			if($user->email){
 				$this->session->set_flashdata("success", "You are logged in");
-				$_SESSION['user-logged'] = TRUE;
+				$_SESSION['user_logged'] = TRUE;
 				$_SESSION['username'] = $user->username;
 
 				redirect("laundryOwner/beranda/index", "refresh");
@@ -69,16 +73,11 @@ class Auth extends CI_Controller
 					'created_date' => date('Y-m-d H:i:s',strtotime($this->input->post('created_date'))),
 					'phone' => $_POST['phone']
 				);
-				// $date = date('y-m-d');
+				
 
-				// $data['username'] =    $this->input->post('username');
-				// $data['email']  =    $this->input->post('email');
-				// $data['password'] =    md5($this->input->post('password'));
-				// $data['gender']   =    $this->input->post('gender');
-				// $data['created_date']   =    $this->input->post($date);
-				// $data['phone']   =    $this->input->post('phone');
+				//$this->db->insert('users', $data);
 
-				$this->db->insert('users', $data);
+				$this->auth_model->regist($data);
 
 				$this->session->set_flashdata("success", "Your account has been registered. You can login now");
 				redirect("auth/register", "refresh");

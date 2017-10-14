@@ -7,7 +7,7 @@
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
 			</ul>
 		</div>
-
+		<?php if(isset($_SESSION['username'])){?>
 		<div class="navbar-collapse collapse" id="navbar-mobile">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
@@ -23,7 +23,7 @@
 								<li><a href="#"><i class="icon-compose"></i></a></li>
 							</ul>
 						</div>
-
+						
 						<ul class="media-list dropdown-content-body">
 							<li class="media">
 								<div class="media-left">
@@ -59,22 +59,24 @@
 						</ul>
 					</div>
 				</li>
-
-				<li class="dropdown">
+				
+				<li class="dropdown">	
 					<a class="dropdown-toggle" data-toggle="dropdown">
 						<img src="assets/images/placeholder.jpg" alt="">
-						<span>Susilo BY</span>
+						<span>Hello <?php echo $_SESSION['username']; ?></span>
 						<i class="caret"></i>
 					</a>
-
 					<ul class="dropdown-menu dropdown-menu-right">
 						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
 						<li class="divider"></li>
 						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
-						<li><a href="<?php echo base_url()?>"><i class="icon-switch2"></i> Logout</a></li>
+						<li><a href="<?php echo base_url();?>index.php/auth/logout"><i class="icon-switch2"></i> Logout</a></li>
 					</ul>
 				</li>
+
 			</ul>
+
 		</div>
+		<?php } ?>
 	</div>
 	<!-- /main navbar -->

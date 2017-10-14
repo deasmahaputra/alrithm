@@ -11,7 +11,7 @@ class Auth_model extends CI_Model
 	// 	parent::__construct();
 	// }
 
-	function daftar($data)
+	function regist($data)
     {
 		$this->db->insert('users', $data);
 	}
